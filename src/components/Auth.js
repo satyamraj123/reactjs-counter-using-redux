@@ -1,10 +1,13 @@
 import classes from './Auth.module.css';
 
 const Auth = () => {
+  const loginhandler=()=>{
+
+  }
   return (
     <main className={classes.auth}>
       <section>
-        <form>
+        <form onSubmit={loginhandler}>
           <div className={classes.control}>
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' />
